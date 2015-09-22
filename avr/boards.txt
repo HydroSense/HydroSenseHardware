@@ -1,0 +1,36 @@
+datalogger.name=CUSTOM Hydrosense Datalogger
+datalogger.vid.0=0x2341
+datalogger.pid.0=0x0036
+datalogger.vid.1=0x2341
+datalogger.pid.1=0x8036
+datalogger.vid.2=0x2A03
+datalogger.pid.2=0x0036
+datalogger.vid.3=0x2A03
+datalogger.pid.3=0x8036
+
+datalogger.upload.tool=arduino:avrdude
+datalogger.upload.protocol=avr109
+datalogger.upload.maximum_size=28672
+datalogger.upload.maximum_data_size=2560
+datalogger.upload.speed=57600
+datalogger.upload.disable_flushing=true
+datalogger.upload.use_1200bps_touch=true
+datalogger.upload.wait_for_upload_port=true
+
+datalogger.bootloader.tool=avrdude
+datalogger.bootloader.low_fuses=0xff
+datalogger.bootloader.high_fuses=0xd8
+datalogger.bootloader.extended_fuses=0xcb
+datalogger.bootloader.file=caterina/Caterina.hex
+datalogger.bootloader.unlock_bits=0x3F
+datalogger.bootloader.lock_bits=0x2F
+
+datalogger.build.mcu=atmega32u4
+datalogger.build.f_cpu=8000000L
+datalogger.build.vid=0x2341
+datalogger.build.pid=0x8036
+datalogger.build.usb_product="Arduino Leonardo"
+datalogger.build.board=AVR_LEONARDO
+datalogger.build.core=arduino:arduino
+datalogger.build.variant=arduino:leonardo
+datalogger.build.extra_flags={build.usb_flags}
