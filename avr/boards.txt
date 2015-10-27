@@ -1,3 +1,5 @@
+##############################################################
+
 datalogger.name=CUSTOM Hydrosense Datalogger
 datalogger.vid.0=0x2341
 datalogger.pid.0=0x0036
@@ -17,7 +19,7 @@ datalogger.upload.disable_flushing=true
 datalogger.upload.use_1200bps_touch=true
 datalogger.upload.wait_for_upload_port=true
 
-datalogger.bootloader.tool=avrdude
+datalogger.bootloader.tool=arduino:avrdude
 datalogger.bootloader.low_fuses=0xff
 datalogger.bootloader.high_fuses=0xd8
 datalogger.bootloader.extended_fuses=0xcb
@@ -56,7 +58,7 @@ weather.upload.disable_flushing=true
 weather.upload.use_1200bps_touch=true
 weather.upload.wait_for_upload_port=true
 
-weather.bootloader.tool=avrdude
+weather.bootloader.tool=arduino:avrdude
 weather.bootloader.low_fuses=0xff
 weather.bootloader.high_fuses=0xd8
 weather.bootloader.extended_fuses=0xcb
@@ -73,3 +75,6 @@ weather.build.board=AVR_LEONARDO
 weather.build.core=arduino:arduino
 weather.build.variant=arduino:leonardo
 weather.build.extra_flags={build.usb_flags}
+
+##############################################################
+
